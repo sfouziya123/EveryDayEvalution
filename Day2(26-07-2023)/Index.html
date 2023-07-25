@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color</title>
+    <style>
+        #Box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+
+        }
+        button{
+            padding: 10px 30px 10px 30px;
+            margin-top: 20px;
+            /* margin-left: 40px; */
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="Box"></div>
+    <button onclick = "changeColor()">change</button>
+    <!-- <button onclick = "color()">change</button>
+    <button onclick = "pink()">change</button>
+     -->
+  
+    
+</body>
+<script>
+    function changeColor() {
+        let main = document.getElementById("Box");
+        main.style.backgroundColor = "pink";
+    }
+    // function color() {
+    //     let main = document.getElementById("Box");
+    //     main.style.backgroundColor = "red";
+    // }
+    // function pink() {
+    //     let main = document.getElementById("Box");
+    //     main.style.backgroundColor = "orange";
+    // }
+    
+</script>
+</html>
