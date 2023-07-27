@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        input{
+            padding: 10px 20px 10px 20px;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        .main{
+            border: 2px solid black;
+            height: 220px;
+            width: 400px;
+            margin-left: 550px;
+        }
+        button{
+            padding: 10px 30px 10px 30px;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Login</h1>
+    <div class="main">
+        <input class="username" type="text" placeholder="User name"/><br/>
+        <input class="password" type="password" placeholder="Password"/><br/>
+        <button class="login">Submit</button>
+        
+    </div>
+    
+</body>
+<script>
+    let button = document.querySelector(".login");
+	
+	button.onclick = function()
+	{
+		let user = document.querySelector(".username").value;
+
+		let password = document.querySelector(".password").value;
+		
+
+			
+	} 
+</script>
+</html>
+<!-- Create an automatic logout website
+
+create a login page with user name and password. 
+once login success redirect to dashboard
+once enter to dashboard after 5 seconds page should logout automatically -->
