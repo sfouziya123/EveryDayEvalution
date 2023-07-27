@@ -1,0 +1,55 @@
+<!D
+OCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo</title>
+<style>
+.input{
+    padding: 10px 20px 10px 20px;
+}
+
+
+</style>
+</head>
+    <body>
+        <div>
+            <input class="input" type="text"/>
+            <button class="btn">ADD</button>
+        </div>
+        <div class="result"></div>
+    </body>
+    <script>
+        let button=document.querySelector(".btn");
+        button.onclick=function(){
+        let search=document.querySelector(".input").value;
+
+            if(search===""){
+
+                alert("Enter the text");
+
+            }else{
+
+                let click=document.createElement("span");
+                click.setAttribute("class","todo");
+
+                let del=document.createElement("button");
+                del.setAttribute("class","delete");
+                del.innerHTML="DELETE";
+
+                    let div=document.createElement("div");
+                    let display=document.querySelector(".result");
+                    display.append(click,del,div);
+                    click.append(search);
+
+                        del.onclick=function(){
+                        del.remove();
+                        click.remove();
+                }
+
+            }
+        }
+    </script>
+</html>
